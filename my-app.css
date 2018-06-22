@@ -1,0 +1,143 @@
+/*@font-face {
+    font-family: UTMCookies;
+    src:url(../fonts/UTMCookies.ttf);
+}*/
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::-webkit-scrollbar {
+    display: none; 
+}
+body{
+	 -ms-overflow-style: none; 
+  overflow: -moz-scrollbars-none; 
+  -webkit-touch-callout: none; 
+    -webkit-user-select: none;
+     -khtml-user-select: none; 
+       -moz-user-select: none;
+        -ms-user-select: none; 
+            user-select: none;
+}
+.all-copy{  
+  -webkit-user-select: all;  /* Chrome all / Safari all */
+  -moz-user-select: all;     /* Firefox all */
+  -ms-user-select: all;      /* IE 10+ */
+  user-select: all;          /* Likely future */   
+}
+.marquee {
+  height: 22px;
+  width:90%;
+  overflow: hidden;
+  position: relative;
+  overflow:hidden;
+}
+
+.marquee div:hover{
+  display: block;
+  width: 180%;
+  height: 30px;
+  position: absolute;
+  overflow: hidden;
+  animation: marquee 5s linear infinite;
+}
+
+.marquee span {
+  float: left;
+  width: 90%;
+}
+
+@keyframes marquee {
+  0% { left: -10%; }
+  100% { left: -120%; }
+}
+marquee .outtermaquee:hover{
+    display: block;
+    width: 200%;
+    height: 30px;
+    position: absolute;
+    overflow: hidden;
+    animation: marquee 5s linear infinite;
+}
+.picture{
+	width:100%;
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+@font-face {
+    font-family: SFUAGBuchStencilBQMedium;
+    src:url(../font/SFUAGBuchStencilBQMedium.ttf);
+}
+@font-face {
+    font-family: UTMCookies;
+    src:url(../font/UTMCookies.ttf);
+}
+@font-face {
+    font-family: UTMCaviar;
+    src:url(../font/UTMCaviar.ttf);
+}
+.input_container{
+  display: inline-block;
+  text-align: center;
+  vertical-align:middle;
+  width:60%;
+  border-bottom:thin solid  #D9D9D9;
+  height:25px
+}
+.background-summer{
+	background:url(../img/summer_bg.jpg)
+}
+.awsome_input{
+  padding: 5px 10px;
+  border: none;
+  background: transparent;
+  display:block;
+  width:100%;
+}
+.awsome_input_border{
+  display:inline-block;
+  width:0px;
+  height: 2px;
+  background:#0082D5;
+  position: relative;
+  top:-13px;
+  -webkit-transition: all ease-in-out .15s;
+  -o-transition: all ease-in-out .15s;
+  transition: all ease-in-out .15s;
+}
+.awsome_input:hover,
+.awsome_input:active, 
+.awsome_input:focus{
+  outline: none;
+}
+.awsome_input:hover+.awsome_input_border,
+.awsome_input:active+.awsome_input_border, 
+.awsome_input:focus+.awsome_input_border{
+  width:100%;
+  
+}
+.btfx_big_blue{background-color:#218BFB; border: none; color: black; padding: 10px 24px; text-align: center; text-decoration: none; display: inline-block; color:#FFF;cursor:pointer;}
+.btfx_big_blue:hover{background-color:#005dd0}
+
+.btfx_big_pink{background-color:#F7384A; border: none; color: black; padding: 0px; text-align: center; text-decoration: none; display: inline-block; color:#FFF;cursor:pointer;}
+.btfx_big_pink:hover{background-color:#F71943}
+
+.btfx_big_yellow{background-color:#C84104; border: none; color: black; padding: 10px; text-align: center; text-decoration: none; display: inline-block; color:#FFF;cursor:pointer;}
+.btfx_big_yellow:hover{background-color:#FF9438}
+
+.btfx_big_lpink{background-color:rgba(255,127,202,1.00); border: none; color: black; padding: 0px; text-align: center; text-decoration: none; display: inline-block; color:#FFF;cursor:pointer;}
+.btfx_big_lpink:hover{background-color:rgba(239,74,151,1.00)}
+
+/*Shop CSS*/
+.shop_btfx_lpink{background-color:#FF4395; border: none; color: black; padding: 0px; text-align: center; text-decoration: none; display: inline-block; color:#FFF;cursor:pointer; height:28px; padding-left:4px; padding-right:4px; border:2px solid #F51C66}
+.shop_btfx_lpink:hover{background-color:#F51C66}
+
+.shop_btfx_lred{background-color:#B50003; border: none; color: black; padding: 0px; text-align: center; text-decoration: none; display: inline-block; color:#FFF;cursor:pointer; height:28px; padding-left:4px; padding-right:4px; border:2px solid #F51C66}
+.shop_btfx_lred:hover{background-color:#FF4245}
+
+.shop_color_picker{border: none; color: black; padding: 0px; text-align: center; text-decoration: none; display: inline-block; cursor:pointer; height:28px; padding-left:4px; padding-right:4px; border:1px solid #8E8E8E; background:#FFFFFF}
+
+.shop_delete_in_order{background-image:url(../img/sym_del.png); background-position:center; background-repeat:no-repeat;background-color:transparent; border:thin solid rgba(255,49,81,1.00) }
+.shop_delete_in_order:hover{background-image:url(../img/sym_del_w.png); background-color:rgba(255,49,81,1.00); background-position:center; background-repeat:no-repeat}

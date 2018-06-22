@@ -1,0 +1,88 @@
+.fuwafuwa {
+
+	z-index:900;
+
+    -webkit-animation-name: fuwafuwa;
+
+    -webkit-animation-duration: 2s;
+
+    -webkit-animation-iteration-count: infinite;
+
+    /* -webkit-animation-direction: alternate; */
+
+    -webkit-animation-timing-function: ease;
+
+    animation-name: fuwafuwa;
+
+    animation-duration: 2s;
+
+    animation-iteration-count: infinite;
+
+    animation-timing-function: ease;
+
+}
+
+@keyframes fuwafuwa{
+
+0% {
+
+    transform: translate(0, 0);
+
+}
+
+50% {
+
+    transform: translate(0, -10px);
+
+}
+
+100% {
+
+    transform: translate(0, 0);
+
+}
+
+}
+
+.topchara {
+	-webkit-animation-name:yurayura;
+	animation-name:yurayura;
+
+	-webkit-animation-iteration-count:infinite;
+	animation-iteration-count:infinite;
+
+	-webkit-animation-timing-function:ease;
+	animation-timing-function:ease;
+
+	-webkit-animation-duration: 3s;
+	animation-duration: 3s;
+}
+
+.topchara.chara02 {
+	-webkit-animation-duration: 2.2s;
+	animation-duration: 2.2s;
+}
+
+/*animation 1*/
+@-webkit-keyframes yurayura {
+	0% {-webkit-transform: rotate(15deg);}
+	50% {-webkit-transform: rotate(-15deg);}
+	100% {-webkit-transform: rotate(15deg);}
+}
+@keyframes yurayura {
+	0% {transform: rotate(15deg);}
+	50% {transform: rotate(-15deg);}
+	100% {transform: rotate(15deg);}
+}
+
+/*animation 2*/
+@-webkit-keyframes yurayura2 {
+	0% {-webkit-transform: rotate(10deg);}
+	50% {-webkit-transform: rotate(-10deg);}
+	100% {-webkit-transform: rotate(10deg);}
+}
+@keyframes yurayura2 {
+	0% {transform: rotate(10deg);}
+	50% {transform: rotate(-10deg);}
+	100% {transform: rotate(10deg);}
+}
